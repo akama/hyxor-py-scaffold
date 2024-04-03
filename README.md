@@ -1,6 +1,6 @@
 # Hyxor Game Bot
 
-This is a Python script for playing the Hyxor game using a WebSocket connection. The script connects to the game server, receives game state updates, and sends moves based on a predefined strategy.
+This is a Python script for playing the [Hyxor](https://hyxor.com) game using a WebSocket connection. The script connects to the game server, receives game state updates, and sends moves based on a predefined strategy.
 
 ## Prerequisites
 
