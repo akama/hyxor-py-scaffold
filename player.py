@@ -4,7 +4,7 @@ import random
 from websocket import create_connection
 
 # Game configuration
-server_url = 'ws://127.0.0.1:9091'
+server_url = 'ws://coresrv:9091'
 player_name = os.environ.get('PLAYER', 'PLAYER')
 
 # WebSocket connection
