@@ -42,7 +42,6 @@ This is a Python script for playing the Hyxor game using a WebSocket connection.
 
 `python player.py`
 
-
 3. The script will connect to the game server and start receiving game state updates.
 
 4. Implement your game strategy in the `make_move()` function. Analyze the current game state (`game_state` object) and make decisions on which moves to make. Use the `send_move()` function to send moves to the server.
@@ -50,6 +49,19 @@ This is a Python script for playing the Hyxor game using a WebSocket connection.
 5. The script will continuously process game state updates and call the `make_move()` function to make moves based on your strategy.
 
 6. The game will continue until the server closes the connection.
+
+### Testing with Docker
+
+1. Make sure you have Docker installed.
+2. Test building the image
+`docker build .`
+3. Record the image id
+4. Download the trial server for dots at [hyxor.com/akama/dots](https://hyxor.com)
+`docker pull registry.hyxor.com/akama/dots`
+5. Run the game container
+`docker run -p 9090:9090 -p 9091:9091 -e LEVEL=level_one --hostname coresrv registry.hyxor.com/akama/dots`
+6. Run the player
+`docker run <ID>`
 
 ## Game State
 
