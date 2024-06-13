@@ -3,7 +3,7 @@ import os
 import random
 from websocket import create_connection
 
-# Game configuration
+# Game configuration, set coresrv in hostfile
 server_url = 'ws://coresrv:9091'
 player_name = os.environ.get('PLAYER', 'PLAYER')
 
