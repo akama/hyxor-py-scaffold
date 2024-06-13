@@ -41,10 +41,10 @@ def make_move():
     # Make decisions on which moves to make
     # Use the send_move function to send moves to the server
     for system_id, system in game_state['systems'].items():
-        if len(system['fleets']) == 1 and system['fleets'][0]['owner'] == player_name and system['fleets'][0]['count'] > 50:
+        if len(system['fleets']) == 1 and system['fleets'][0]['owner'] == player_name and system['fleets'][0]['count'] > 20:
             if random.random() < 0.5:
                 random_target = random.randint(0, len(game_state['systems']) - 1)
-                send_move(system['id'], random_target, system['fleets'][0]['count'] - 7)
+                send_move(system['id'], random_target, system['fleets'][0]['count'])
             else:
                 send_upgrade(system['id'])
 
