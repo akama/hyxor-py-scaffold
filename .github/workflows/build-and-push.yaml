@@ -2,7 +2,7 @@ name: Build & Push Demo
 
 on:
   push:
-    branches: ['workbench']
+    branches: ['trunk']
 
 env:
   REGISTRY: registry.hyxor.com
